@@ -23,11 +23,9 @@
   transition: 0.3s;
 }
 
-/* .menuBtn:hover {
-  background: rgba(124, 58, 237, 0.12);
-  border-color: #8b5cf6;
-  box-shadow: 0 0 18px rgba(124, 58, 237, 0.25);
-} */
+.menuBtn:hover {
+  cursor: pointer;
+}
 
 .menuBtn:active {
   transform: scale(0.95);

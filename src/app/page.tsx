@@ -1,4 +1,5 @@
 "use client";
+import Home from "./components/Home";
 import Menu from "./components/Menu";
 import Navbar from "./components/Navbar";
 import Styles from "./page.module.css";
@@ -16,7 +17,6 @@ const particles = [
   { left: "95%", top: "20%", delay: "2s", duration: "7s", scale: 0.8 },
 ];
 const page = () => {
-  
   return (
     <>
       <section className={Styles.particleSection}>
@@ -40,6 +40,7 @@ const page = () => {
 
         <Navbar />
         <Menu />
+        <Home />
       </section>
     </>
   );

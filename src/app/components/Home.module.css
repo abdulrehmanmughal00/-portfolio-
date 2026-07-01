@@ -1,0 +1,275 @@
+.home {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+}
+
+/* LEFT SIDE */
+.part1 {
+  height: 100%;
+  width: 50%;
+}
+
+.part1 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+
+.heroText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+}
+
+/* small intro */
+.smallText {
+  color: #cbd5e1;
+  font-size: 18px;
+}
+
+/* name */
+.name {
+  font-size: 64px;
+  font-weight: 800;
+  color: white;
+  line-height: 1.1;
+}
+
+.span {
+  background: linear-gradient(
+    90deg,
+    #8b5cf6 0%,
+    #7c3aed 30%,
+    #6366f1 65%,
+    #3b82f6 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* role */
+.role {
+  font-size: 22px;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+/* description */
+.desc {
+  font-size: 16px;
+  color: #94a3b8;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+/* buttons */
+.btnGroup {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.primaryBtn {
+  padding: 12px 22px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(90deg, #7c3aed, #2563eb);
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.cvBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 22px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(124, 58, 237, 0.35);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cvBtn:hover {
+  background: rgba(124, 58, 237, 0.12);
+  border-color: #8b5cf6;
+  box-shadow: 0 0 18px rgba(124, 58, 237, 0.25);
+  transform: translateY(-2px);
+}
+
+.cvBtn:active,
+.primaryBtn:active {
+  transform: scale(0.97);
+}
+
+/* socials */
+.socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 15px;
+  font-size: 20px;
+  color: #94a3b8;
+}
+
+.socials i {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials i:hover {
+  color: #8b5cf6;
+  transform: translateY(-3px);
+}
+/* xxxxxxxxxxxxxxxx/ */
+/* RIGHT SIDE */
+.part2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* CENTER CIRCLE WRAPPER */
+.heroCircle {
+  width: 370px;
+  height: 370px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PROFILE */
+.profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.img {
+  object-fit: cover;
+}
+
+/* ORBITS */
+.orbit1,
+.orbit2,
+.orbit3 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  /* border: 1px solid white; */
+}
+
+/* DOTS */
+.dotBig,
+.dotSmall,
+.dotTiny {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+.dotBig {
+  width: 18px;
+  height: 18px;
+  background: #8b5cf6;
+}
+
+.dotSmall {
+  width: 12px;
+  height: 12px;
+  background: #3b82f6;
+}
+
+.dotTiny {
+  width: 8px;
+  height: 8px;
+  background: #22c55e;
+}
+.workBtn {
+  margin-left: 400px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 14px 28px;
+
+  background: rgba(18, 18, 30, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 0 30px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  transition: all 0.3s ease;
+}
+
+.workBtn:hover {
+  transform: translateY(-2px);
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow:
+    0 0 35px rgba(59, 130, 246, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.status {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #22c55e;
+
+  box-shadow:
+    0 0 8px #22c55e,
+    0 0 18px #22c55e;
+
+  animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.25);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
