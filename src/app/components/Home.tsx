@@ -4,12 +4,11 @@ import Styles from "./Home.module.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
-import { FiDownload } from "react-icons/fi";
 
 const Home = () => {
   const ref = useRef(null);
   return (
-    <div className={Styles.home} ref={ref}>
+    <div className={Styles.home} ref={ref} id="home">
       <div className={Styles.part1}>
         <div className={Styles.heroText}>
           <p className={Styles.smallText}>Hi, I&apos;m </p>
@@ -30,10 +29,6 @@ const Home = () => {
 
           <div className={Styles.btnGroup}>
             <button className={Styles.primaryBtn}>View Projects</button>
-            <button className={Styles.cvBtn}>
-              Download CV
-              <FiDownload className={Styles.icon} />
-            </button>
           </div>
 
           <div className={Styles.socials}>

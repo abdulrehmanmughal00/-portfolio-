@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   z-index: 100;
+  display: none;
 }
 
 .menuBtn {
@@ -30,7 +31,19 @@
 .menuBtn:active {
   transform: scale(0.95);
 }
-
+.menuItem {
+  text-decoration: none;
+  background: linear-gradient(
+    90deg,
+    #8b5cf6 0%,
+    #7c3aed 30%,
+    #6366f1 65%,
+    #3b82f6 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 .icon {
   font-size: 16px;
   background: linear-gradient(
@@ -92,8 +105,8 @@
   background-clip: text;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .menuWrapper {
-    display: none;
+    display: block;
   }
-}
+} 

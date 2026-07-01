@@ -1,4 +1,5 @@
 "use client";
+import Account from "./components/Account";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
 import Navbar from "./components/Navbar";
@@ -41,6 +42,7 @@ const page = () => {
         <Navbar />
         <Menu />
         <Home />
+        <Account />
       </section>
     </>
   );

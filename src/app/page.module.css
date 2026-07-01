@@ -3,8 +3,9 @@
   width: 100%;
   height: auto;
   overflow: hidden;
-  background-color: #050510;
-  color: wheat;
+  /* background-color: #050510; */
+  background-color: black;
+  color: white;
 }
 
 .content {

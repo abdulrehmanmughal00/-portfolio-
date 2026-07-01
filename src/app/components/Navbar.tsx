@@ -18,12 +18,24 @@ const Navbar = () => {
       </div>
       <div className={Styles.home}>
         <div className={Styles.show1}>
-          <h3 className={Styles.h4}>Home</h3>
-          <h3 className={Styles.h4}>About</h3>
-          <h3 className={Styles.h4}>Skills</h3>
-          <h3 className={Styles.h4}>Projects</h3>
-          <h3 className={Styles.h4}>Experience</h3>
-          <h3 className={Styles.h4}>Contact</h3>
+          <a href="#home">
+            <h3 className={Styles.h4}> Home </h3>
+          </a>
+          <a href="#about">
+            <h3 className={Styles.h4}> About</h3>
+          </a>
+          <a href="#skills">
+            <h3 className={Styles.h4}> Skills</h3>
+          </a>
+          <a href="#projects">
+            <h3 className={Styles.h4}> Projects</h3>
+          </a>
+          <a href="#experience">
+            <h3 className={Styles.h4}>Experience</h3>
+          </a>
+          <a href="#contact">
+            <h3 className={Styles.h4}> Contact</h3>
+          </a>
         </div>
       </div>
       <div className={Styles.cv}>

@@ -1,22 +1,18 @@
 .home {
   position: relative;
-  height: 70vh;
+  height: auto;
   width: 100%;
   display: flex;
 }
 
 /* LEFT SIDE */
-.part1 {
-  height: 100%;
-  width: 50%;
-}
 
 .part1 {
+  padding-top: 20px;
   height: 100%;
   width: 50%;
   display: flex;
-  align-items: center;
-  padding-left: 80px;
+  padding-left: 20px;
 }
 
 .heroText {
@@ -78,7 +74,7 @@
 }
 
 .primaryBtn {
-  padding: 12px 22px;
+  padding: 10px 20px;
   border-radius: 10px;
   border: none;
   background: linear-gradient(90deg, #7c3aed, #2563eb);
@@ -139,15 +135,14 @@
   height: 100%;
   width: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 /* CENTER CIRCLE WRAPPER */
 .heroCircle {
-  width: 370px;
-  height: 370px;
+  width: 300px;
+  height: 300px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -156,11 +151,12 @@
 
 /* PROFILE */
 .profile {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  background-color: aliceblue;
 }
 
 .img {
@@ -176,8 +172,8 @@
   height: 100%;
   border-radius: 50%;
 
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  /* border: 1px solid white; */
+  /* border: 1px solid rgba(255, 255, 255, 0.15); */
+  border: 1px solid white;
 }
 
 /* DOTS */
@@ -192,8 +188,8 @@
 }
 
 .dotBig {
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   background: #8b5cf6;
 }
 
@@ -272,4 +268,117 @@
     transform: scale(1);
     opacity: 1;
   }
+}
+/*! responsive */
+/* ================= 1250 ================= */
+
+@media (max-width: 1250px) {
+  .dotBig {
+    width: 13px;
+    height: 13px;
+  }
+
+  .dotSmall {
+    width: 10px;
+    height: 10px;
+  }
+
+  .dotTiny {
+    width: 7px;
+    height: 7px;
+  }
+  .workBtn {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-left: 169px;
+    padding: 15px 15px;
+  }
+  .profile {
+    width: 200px;
+    height: 200px;
+  }
+  .heroCircle {
+    width: 250px;
+    height: 250px;
+  }
+  .name {
+    font-size: 40px;
+  }
+}
+/* 900 */
+@media (max-width: 900px) {
+  .dotBig {
+    width: 10px;
+    height: 10px;
+  }
+
+  .dotSmall {
+    width: 7px;
+    height: 7px;
+  }
+
+  .dotTiny {
+    width: 4px;
+    height: 4px;
+  }
+  .workBtn {
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 16px;
+    margin-left: 169px;
+    padding: 13px 15px;
+  }
+
+  .profile {
+    width: 145px;
+    height: 145px;
+  }
+  .heroCircle {
+    width: 190px;
+    height: 190px;
+  }
+  .part1 {
+    flex-wrap: wrap;
+  }
+  .name {
+    font-size: 30px;
+  }
+ 
+}
+
+/* 7000 */
+@media (max-width: 700px) {
+  .workBtn {
+    margin-left: 45px;
+    margin-top: 10px;
+  }
+  .profile {
+    width: 120px;
+    height: 120px;
+  }
+  .heroCircle {
+    width: 150px;
+    height: 150px;
+  }
+  .workBtn {
+    padding: 14px 10px;
+    font-size: 10px;
+    font-weight: 300;
+  }
+  .name {
+    font-size: 20px;
+  }
+  .role {
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .desc {
+    font-size: 10px;
+    line-height: normal;
+    max-width: 300px;
+  }
+
+ 
+
 }

@@ -6,6 +6,15 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import Styles from "./Menu.module.css";
 
+const menuItems = [
+  { name: "Home", id: "home" },
+  { name: "About", id: "about" },
+  { name: "Skills", id: "skills" },
+  { name: "Projects", id: "projects" },
+  { name: "Experience", id: "experience" },
+  { name: "Contact", id: "contact" },
+];
+
 const Menu = () => {
   const [open, setOpen] = useState(false);
 
@@ -15,9 +24,7 @@ const Menu = () => {
         <button
           type="button"
           className={Styles.menuBtn}
-          onClick={() => {
-            setOpen(!open);
-          }}
+          onClick={() => setOpen(!open)}
         >
           <motion.div
             animate={{
@@ -38,6 +45,7 @@ const Menu = () => {
       <AnimatePresence>
         {open && (
           <>
+            {/* Overlay */}
             <motion.div
               className={Styles.overlay}
               initial={{ opacity: 0 }}
@@ -45,6 +53,7 @@ const Menu = () => {
               exit={{ opacity: 0 }}
               onClick={() => setOpen(false)}
             />
+
             {/* Sidebar */}
             <motion.div
               className={Styles.mobileMenu}
@@ -56,16 +65,11 @@ const Menu = () => {
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
-              {[
-                "Home",
-                "About",
-                "Skills",
-                "Projects",
-                "Experience",
-                "Contact",
-              ].map((item, index) => (
-                <motion.h3
-                  key={item}
+              {menuItems.map((item, index) => (
+                <motion.a
+                  key={item.id}
+                  href={`#${item.id}`}
+                  className={Styles.menuItem}
                   initial={{ opacity: 0, x: 40 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{
@@ -73,8 +77,8 @@ const Menu = () => {
                   }}
                   onClick={() => setOpen(false)}
                 >
-                  {item}
-                </motion.h3>
+                  {item.name}
+                </motion.a>
               ))}
             </motion.div>
           </>
