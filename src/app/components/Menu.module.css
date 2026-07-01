@@ -1,0 +1,76 @@
+.menuWrapper {
+  position: relative;
+
+  z-index: 10;
+}
+
+.menuBtn {
+  width: 52px;
+  height: 52px;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+  transition: 0.3s;
+}
+
+.menuBtn:hover {
+  background: rgba(124, 58, 237, 0.12);
+  border-color: #8b5cf6;
+  box-shadow: 0 0 18px rgba(124, 58, 237, 0.25);
+}
+
+.menuBtn:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  font-size: 30px;
+  color: white;
+}
+/* Overlay */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+/* Sidebar */
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  max-width: 85vw;
+  height: 100vh;
+  padding: 153px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(25px);
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  z-index: 8;
+  box-shadow: -15px 0 50px rgba(0, 0, 0, 0.35);
+}
+
+.mobileMenu h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.mobileMenu h3:hover {
+  transform: translateX(10px);
+  background: linear-gradient(90deg, #8b5cf6, #7c3aed, #6366f1, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

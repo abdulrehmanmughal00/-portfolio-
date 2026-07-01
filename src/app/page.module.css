@@ -1,0 +1,77 @@
+.particleSection {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #050510;
+  color: wheat;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+}
+
+.particles {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #7c4dff;
+
+  box-shadow:
+    0 0 10px #7c4dff,
+    0 0 20px #4da3ff,
+    0 0 35px #4da3ff;
+
+  animation:
+    float linear infinite,
+    blink ease-in-out infinite;
+}
+
+/* Different sizes */
+
+.particle:nth-child(2n) {
+  background: #4da3ff;
+}
+
+.particle:nth-child(3n) {
+  width: 2px;
+  height: 2px;
+}
+
+.particle:nth-child(5n) {
+  width: 6px;
+  height: 6px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
