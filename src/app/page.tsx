@@ -4,6 +4,7 @@ import Account from "./components/Account";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
 import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 import Styles from "./page.module.css";
 //! animation background
 const particles = [
@@ -47,6 +48,7 @@ const page = () => {
         <Account />
         <div className={Styles.space2}></div>
         <About />
+        <Skills />
       </section>
     </>
   );

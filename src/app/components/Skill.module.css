@@ -1,0 +1,153 @@
+.skillsWrapper {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.part1 {
+  height: auto;
+  width: 88%;
+}
+.name {
+  font-size: 64px;
+  font-weight: 800;
+  color: white;
+  line-height: 1.1;
+}
+.name::after {
+  content: "";
+  display: block;
+
+  width: 90px;
+  height: 4px;
+
+  margin-top: 18px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+}
+
+.span {
+  background: linear-gradient(
+    90deg,
+    #8b5cf6 0%,
+    #7c3aed 30%,
+    #6366f1 65%,
+    #3b82f6 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.part2 {
+  width: 88%;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.techWrapper {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+
+  gap: 20px;
+
+  width: 100%;
+}
+
+.tech {
+  min-width: 170px;
+  justify-content: center;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 22px 28px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+
+  transition: all 0.35s ease;
+}
+
+.tech svg {
+  font-size: 32px;
+  color: #8b5cf6;
+}
+
+.tech:hover {
+  transform: translateY(-8px) scale(1.04);
+
+  border-color: #8b5cf6;
+
+  background: rgba(124, 58, 237, 0.08);
+
+  box-shadow:
+    0 0 20px rgba(124, 58, 237, 0.3),
+    0 0 50px rgba(124, 58, 237, 0.15);
+}
+
+.part3 {
+  width: 88%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.progressWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px 40px;
+}
+
+.progressItem {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progressHead {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.progressHead span:last-child {
+  color: #8b5cf6;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #8b5cf6, #6366f1, #3b82f6);
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.4);
+}
+
+@media (max-width: 768px) {
+  .part3 {
+    width: 88%;
+  }
+
+  .progressWrapper {
+    grid-template-columns: 1fr;
+  }
+}
