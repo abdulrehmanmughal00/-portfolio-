@@ -3,7 +3,7 @@
   height: 9vh;
   display: flex;
   align-items: center;
-  z-index: 10;
+  z-index: 10000;
   display: none;
 }
 
@@ -45,23 +45,16 @@
   background-clip: text;
 }
 .icon {
-  font-size: 16px;
-  background: linear-gradient(
-    90deg,
-    #8b5cf6 0%,
-    #7c3aed 30%,
-    #6366f1 65%,
-    #3b82f6 100%
-  );
+  font-size: 30px;
+  color: #8b5cf6;
 }
 /* Overlay */
 .overlay {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
+  z-index: 9998;
 }
-
-/* Sidebar */
 
 .mobileMenu {
   position: fixed;
@@ -77,10 +70,8 @@
   background: #060612;
   backdrop-filter: blur(25px);
   border-left: 1px solid rgba(255, 255, 255, 0.08);
-  z-index: 9;
-  box-shadow: -15px 0 50px rgba(0, 0, 0, 0.35);
+  z-index: 9999;
 }
-
 .mobileMenu h3 {
   background: linear-gradient(
     90deg,
@@ -107,6 +98,6 @@
 
 @media (max-width: 768px) {
   .menuWrapper {
-    display: block;
+    display: flex;
   }
-} 
+}

@@ -3,12 +3,10 @@
 import Styles from "./Home.module.css";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useRef } from "react";
 
 const Home = () => {
-  const ref = useRef(null);
   return (
-    <div className={Styles.home} ref={ref} id="home">
+    <div className={Styles.home} id="home">
       <div className={Styles.part1}>
         <div className={Styles.heroText}>
           <p className={Styles.smallText}>Hi, I&apos;m </p>
@@ -21,9 +19,9 @@ const Home = () => {
 
           <p className={Styles.desc}>
             I build responsive and interactive web applications with modern
-            technologies. Currently focused on{" "}
-            <span className={Styles.span}>React</span> ,{" "}
-            <span className={Styles.span}>Next.js</span> and{" "}
+            technologies. Currently focused on
+            <span className={Styles.span}>React</span> ,
+            <span className={Styles.span}>Next.js</span> and
             <span className={Styles.span}>TypeScript</span> building exceptional
             user experiences.
           </p>
@@ -92,7 +90,7 @@ const Home = () => {
             />
           </div>
         </div>
-        <motion.button className={Styles.workBtn} drag dragConstraints={ref}>
+        <motion.button className={Styles.workBtn} >
           <span className={Styles.status}></span>
           <span>Available for work</span>
         </motion.button>

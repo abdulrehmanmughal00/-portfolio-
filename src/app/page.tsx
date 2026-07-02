@@ -1,4 +1,5 @@
 "use client";
+import About from "./components/About";
 import Account from "./components/Account";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
@@ -38,11 +39,14 @@ const page = () => {
           ))}
         </div>
         {/* add anything you want  */}
-
         <Navbar />
-        <Menu />
+        {/* <Menu /> */}
+        <div className={Styles.space1}></div>
+
         <Home />
         <Account />
+        <div className={Styles.space2}></div>
+        <About />
       </section>
     </>
   );

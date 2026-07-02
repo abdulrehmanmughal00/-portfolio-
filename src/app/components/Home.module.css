@@ -137,6 +137,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding-top: 20px;
 }
 
 /* CENTER CIRCLE WRAPPER */
@@ -272,6 +273,10 @@
 /* ================= 1250 ================= */
 
 @media (max-width: 1250px) {
+  .part1,
+  .part2 {
+    padding-top: 35px;
+  }
   .dotBig {
     width: 13px;
     height: 13px;
@@ -338,6 +343,7 @@
     height: 190px;
   }
   .part1 {
+    padding-top: 30px;
     flex-wrap: wrap;
   }
   .name {
@@ -347,6 +353,13 @@
 
 /* 7000 */
 @media (max-width: 700px) {
+  .part1 {
+    padding-top: 20px;
+  }
+  .part2 {
+    padding-top: 26px;
+  }
+
   .workBtn {
     margin-left: 45px;
     margin-top: 10px;
@@ -375,5 +388,37 @@
     font-size: 10px;
     line-height: normal;
     max-width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+    .dotBig {
+    width: 7px;
+    height: 7px;
+  }
+
+  .dotSmall {
+    width: 5px;
+    height: 5px;
+  }
+
+  .dotTiny {
+    width: 2.5px;
+    height: 2.5px;
+  }
+
+  .profile {
+    width: 95px;
+    height: 95px;
+  }
+  .heroCircle {
+    width: 125px;
+    height: 125px;
+  }
+   .workBtn {
+    padding: 9px 6px;
+    font-size: 10px;
+    font-weight: 300;
+    gap: 5px;
   }
 }

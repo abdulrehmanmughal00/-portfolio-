@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import Styles from "./Menu.module.css";
+import { ImMenu3 } from "react-icons/im";
 
 const menuItems = [
   { name: "Home", id: "home" },
@@ -36,7 +37,7 @@ const Menu = () => {
             {open ? (
               <IoClose className={Styles.icon} />
             ) : (
-              <GiHamburgerMenu className={Styles.icon} />
+              <ImMenu3 className={Styles.icon} />
             )}
           </motion.div>
         </button>
