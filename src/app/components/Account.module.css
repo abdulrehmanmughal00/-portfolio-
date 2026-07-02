@@ -1,4 +1,26 @@
 .account {
-  height: 5vh;
+  height: 7vh;
   width: 100vw;
+  position: relative;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+}
+.githubIcon {
+  margin-left: 21px;
+  height: 80%;
+  width: 40px;
+  border-radius: 50%;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+.gmailIcon {
+  margin-left: 21px;
+  height: 80%;
+  width: 40px;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  cursor: pointer;
 }

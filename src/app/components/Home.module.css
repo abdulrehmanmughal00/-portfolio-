@@ -156,7 +156,6 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  background-color: aliceblue;
 }
 
 .img {
@@ -344,7 +343,6 @@
   .name {
     font-size: 30px;
   }
- 
 }
 
 /* 7000 */
@@ -378,7 +376,4 @@
     line-height: normal;
     max-width: 300px;
   }
-
- 
-
 }
