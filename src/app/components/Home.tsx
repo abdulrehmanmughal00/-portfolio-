@@ -7,7 +7,13 @@ import Image from "next/image";
 const Home = () => {
   return (
     <div className={Styles.home} id="home">
-      <div className={Styles.part1}>
+      <motion.div
+        className={Styles.part1}
+        initial={{ opacity: 0, x: -70 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+      >
         <div className={Styles.heroText}>
           <p className={Styles.smallText}>Hi, I&apos;m </p>
 
@@ -37,9 +43,14 @@ const Home = () => {
             <i className="fa-solid fa-envelope"></i>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className={Styles.part2}>
+      <motion.div className={Styles.part2}
+        initial={{ opacity: 0, x: 70 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1 }}
+      >
         <div className={Styles.heroCircle}>
           {/* Outer Orbit */}
           <motion.div
@@ -90,11 +101,11 @@ const Home = () => {
             />
           </div>
         </div>
-        <motion.button className={Styles.workBtn} >
+        <motion.button className={Styles.workBtn}>
           <span className={Styles.status}></span>
           <span>Available for work</span>
         </motion.button>
-      </div>
+      </motion.div>
     </div>
   );
 };
