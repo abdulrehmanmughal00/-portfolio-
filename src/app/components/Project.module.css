@@ -1,0 +1,403 @@
+.projects {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 7%;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* ===========================
+        Background Glow
+=========================== */
+
+.blurOne,
+.blurTwo {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(140px);
+  z-index: 0;
+  animation: glow 6s ease-in-out infinite;
+}
+
+.blurOne {
+  width: 340px;
+  height: 340px;
+  background: rgba(124, 58, 237, 0.18);
+  top: -120px;
+  left: -120px;
+}
+
+.blurTwo {
+  width: 300px;
+  height: 300px;
+  background: rgba(59, 130, 246, 0.18);
+  right: -80px;
+  bottom: -80px;
+  animation-delay: 2s;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+}
+
+/* ===========================
+        Container
+=========================== */
+
+.container {
+  position: relative;
+  z-index: 2;
+  max-width: 1450px;
+  margin: auto;
+}
+
+/* ===========================
+        Heading
+=========================== */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.smallHeading {
+  color: #8b5cf6;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.heading {
+  margin-top: 10px;
+  color: #fff;
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.heading span {
+  background: linear-gradient(90deg, #8b5cf6, #6366f1, #3b82f6);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===========================
+        Grid
+=========================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+} /* ===========================
+        Project Card
+=========================== */
+
+.projectCard {
+  position: relative;
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(20px);
+
+  transition: 0.35s ease;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.projectCard:hover {
+  border-color: rgba(124, 58, 237, 0.45);
+
+  box-shadow:
+    0 0 30px rgba(124, 58, 237, 0.2),
+    0 0 60px rgba(59, 130, 246, 0.08);
+}
+
+/* ===========================
+        Project Image
+=========================== */
+
+.imageWrapper {
+  position: relative;
+
+  width: 100%;
+
+  height: 240px;
+
+  overflow: hidden;
+}
+
+.projectImg {
+  object-fit: cover;
+
+  transition: 0.45s;
+}
+
+.projectCard:hover .projectImg {
+  transform: scale(1.08);
+}
+
+/* ===========================
+        Content
+=========================== */
+
+.projectContent {
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
+.projectTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projectTitle {
+  color: white;
+
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.projectLink {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  color: white;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  transition: 0.3s;
+}
+
+.projectLink:hover {
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+
+  transform: rotate(-15deg);
+}
+
+.projectDesc {
+  margin-top: 18px;
+
+  color: #94a3b8;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* ===========================
+        Tags
+=========================== */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-top: auto;
+
+  padding-top: 28px;
+}
+
+.tag {
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #cbd5e1;
+
+  font-size: 13px;
+}
+/* ===========================
+        1200px
+=========================== */
+
+@media (max-width: 1200px) {
+  .heading {
+    font-size: 48px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imageWrapper {
+    height: 220px;
+  }
+
+  .projectTitle {
+    font-size: 22px;
+  }
+}
+
+/* ===========================
+        900px
+=========================== */
+
+@media (max-width: 900px) {
+  .projects {
+    padding: 80px 5%;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projectCard {
+    max-width: 650px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .imageWrapper {
+    height: 250px;
+  }
+
+  .projectTitle {
+    font-size: 24px;
+  }
+}
+
+/* ===========================
+        768px
+=========================== */
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 70px 25px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .smallHeading {
+    font-size: 13px;
+  }
+
+  .projectContent {
+    padding: 20px;
+  }
+
+  .projectDesc {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+
+  .projectLink {
+    width: 38px;
+    height: 38px;
+  }
+
+  .projectTitle {
+    font-size: 22px;
+  }
+}
+
+/* ===========================
+        500px
+=========================== */
+
+@media (max-width: 500px) {
+  .projects {
+    padding: 60px 20px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .smallHeading {
+    font-size: 12px;
+  }
+
+  .imageWrapper {
+    height: 190px;
+  }
+
+  .projectTitle {
+    font-size: 20px;
+  }
+
+  .projectDesc {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .projectContent {
+    padding: 18px;
+  }
+
+  .tags {
+    gap: 8px;
+    padding-top: 20px;
+  }
+
+  .tag {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+
+  .projectTop {
+    align-items: flex-start;
+  }
+
+  .projectLink {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+  }
+}

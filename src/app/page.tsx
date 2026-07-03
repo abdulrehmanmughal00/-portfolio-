@@ -2,8 +2,8 @@
 import About from "./components/About";
 import Account from "./components/Account";
 import Home from "./components/Home";
-import Menu from "./components/Menu";
 import Navbar from "./components/Navbar";
+import Project from "./components/Project";
 import Skills from "./components/Skills";
 import Styles from "./page.module.css";
 //! animation background
@@ -49,6 +49,7 @@ const page = () => {
         <div className={Styles.space2}></div>
         <About />
         <Skills />
+        <Project />
       </section>
     </>
   );

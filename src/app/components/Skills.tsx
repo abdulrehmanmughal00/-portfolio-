@@ -125,15 +125,15 @@ const Skills = () => {
       <div className={Styles.part3}>
         <div className={Styles.progressWrapper}>
           {[
+            { name: "HTML & CSS", value: 96 },
+            { name: "JavaScript", value: 95 },
+            { name: "TypeScript", value: 85 },
+            { name: "Java", value: 75 },
             { name: "React", value: 90 },
             { name: "Next.js", value: 85 },
-            { name: "JavaScript", value: 90 },
-            { name: "TypeScript", value: 80 },
-            { name: "HTML & CSS", value: 95 },
             { name: "Tailwind CSS", value: 88 },
             { name: "Git", value: 90 },
             { name: "GitHub", value: 90 },
-            { name: "Java", value: 75 },
           ].map((skill) => (
             <div className={Styles.progressItem} key={skill.name}>
               <div className={Styles.progressHead}>

@@ -9,11 +9,7 @@ import {
   FaJsSquare,
   FaGitAlt,
 } from "react-icons/fa";
-import {
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-} from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si";
 
 const About = () => {
   return (
@@ -54,7 +50,7 @@ const About = () => {
           <div className={Styles.line}></div>
 
           <p className={Styles.desc}>
-          This is Abdul Rehman, a Frontend Developer with two years of
+            This is Abdul Rehman, a Frontend Developer with two years of
             hands-on learning and project-building experience. I specialize in
             React, Next.js, and TypeScript, creating responsive and modern web
             applications.
@@ -66,47 +62,6 @@ const About = () => {
             frontend development practices.
           </p>
 
-          <div className={Styles.techWrapper}>
-            <div className={Styles.tech}>
-              <FaHtml5 />
-              <span>HTML</span>
-            </div>
-
-            <div className={Styles.tech}>
-              <FaCss3Alt />
-              <span>CSS</span>
-            </div>
-
-            <div className={Styles.tech}>
-              <FaJsSquare />
-              <span>JavaScript</span>
-            </div>
-
-            <div className={Styles.tech}>
-              <SiTypescript />
-              <span>TypeScript</span>
-            </div>
-
-            {/* <div className={Styles.tech}>
-              <FaReact />
-              <span>React</span>
-            </div>
-
-            <div className={Styles.tech}>
-              <SiNextdotjs />
-              <span>Next.js</span>
-            </div>
-
-            <div className={Styles.tech}>
-              <SiTailwindcss />
-              <span>Tailwind</span>
-            </div>
-
-            <div className={Styles.tech}>
-              <FaGitAlt />
-              <span>Git</span>
-            </div> */}
-          </div>
         </motion.div>
 
         {/* RIGHT */}
@@ -117,34 +72,22 @@ const About = () => {
           viewport={{ once: true }}
           transition={{ duration: 1 }}
         >
-          <motion.div
-            whileHover={{ y: -8 }}
-            className={Styles.card}
-          >
+          <motion.div whileHover={{ y: -8 }} className={Styles.card}>
             <h3>2+</h3>
             <p>Years Learning</p>
           </motion.div>
 
-          <motion.div
-            whileHover={{ y: -8 }}
-            className={Styles.card}
-          >
+          <motion.div whileHover={{ y: -8 }} className={Styles.card}>
             <h3>10+</h3>
             <p>Frontend Projects</p>
           </motion.div>
 
-          <motion.div
-            whileHover={{ y: -8 }}
-            className={Styles.card}
-          >
+          <motion.div whileHover={{ y: -8 }} className={Styles.card}>
             <h3>100%</h3>
             <p>Responsive Design</p>
           </motion.div>
 
-          <motion.div
-            whileHover={{ y: -8 }}
-            className={Styles.card}
-          >
+          <motion.div whileHover={{ y: -8 }} className={Styles.card}>
             <h3>∞</h3>
             <p>Always Learning</p>
           </motion.div>

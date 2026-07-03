@@ -1,5 +1,5 @@
 .skillsWrapper {
-  min-height: 70vh;
+  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -149,5 +149,11 @@
 
   .progressWrapper {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .name{
+    font-size: 34px;
   }
 }
