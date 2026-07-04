@@ -2,6 +2,7 @@
 import About from "./components/About";
 import Account from "./components/Account";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
@@ -54,6 +55,7 @@ const page = () => {
         <Project />
         <Experience />
         <Contact />
+        <Footer />
       </section>
     </>
   );
