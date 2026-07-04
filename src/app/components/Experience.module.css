@@ -1,0 +1,443 @@
+.experience {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 7%;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* ===========================
+        Background Glow
+=========================== */
+
+.blurOne,
+.blurTwo {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(130px);
+  z-index: 0;
+  animation: glow 6s ease-in-out infinite;
+}
+
+.blurOne {
+  width: 320px;
+  height: 320px;
+  background: rgba(124, 58, 237, 0.18);
+  top: -80px;
+  left: -100px;
+}
+
+.blurTwo {
+  width: 300px;
+  height: 300px;
+  background: rgba(59, 130, 246, 0.18);
+  right: -100px;
+  bottom: -100px;
+  animation-delay: 2s;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+}
+
+/* ===========================
+        Container
+=========================== */
+
+.container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1450px;
+  margin: auto;
+
+  display: flex;
+  gap: 70px;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* ===========================
+          Heading
+=========================== */
+
+.smallHeading {
+  color: #8b5cf6;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.heading {
+  margin-top: 10px;
+
+  font-size: 56px;
+  font-weight: 800;
+  color: white;
+}
+
+.heading span {
+  background: linear-gradient(90deg, #8b5cf6, #6366f1, #3b82f6);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.line {
+  width: 90px;
+  height: 4px;
+
+  margin: 24px 0 45px;
+
+  border-radius: 999px;
+
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+} /* ===========================
+        Timeline
+=========================== */
+
+.timeline {
+  position: relative;
+  padding-left: 45px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(to bottom, #8b5cf6, #3b82f6);
+}
+
+.item {
+  position: relative;
+  margin-bottom: 55px;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.dot {
+  position: absolute;
+  left: -44px;
+  top: 8px;
+
+  width: 18px;
+  height: 18px;
+
+  border-radius: 50%;
+
+  background: #8b5cf6;
+
+  box-shadow:
+    0 0 10px #8b5cf6,
+    0 0 25px #8b5cf6;
+}
+
+.content {
+  padding: 28px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(20px);
+
+  transition: 0.35s;
+}
+
+.content:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(124, 58, 237, 0.45);
+
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.2);
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.topRow h3 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.year {
+  color: #8b5cf6;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.content h4 {
+  margin-top: 12px;
+
+  color: #cbd5e1;
+
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.content p {
+  margin-top: 18px;
+
+  color: #94a3b8;
+
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* ===========================
+          Right Cards
+=========================== */
+
+.card {
+  min-height: 170px;
+
+  border-radius: 22px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  backdrop-filter: blur(20px);
+
+  transition: 0.35s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+
+  border-color: rgba(124, 58, 237, 0.45);
+
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.22);
+}
+
+.card h3 {
+  font-size: 50px;
+  font-weight: 800;
+
+  background: linear-gradient(90deg, #8b5cf6, #6366f1, #3b82f6);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card span {
+  margin-top: 14px;
+
+  color: #94a3b8;
+
+  font-size: 15px;
+  text-align: center;
+}
+/* ===========================
+        1200px
+=========================== */
+
+@media (max-width: 1200px) {
+  .container {
+    gap: 50px;
+  }
+
+  .heading {
+    font-size: 48px;
+  }
+
+  .right {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 150px;
+  }
+}
+
+/* ===========================
+        992px
+=========================== */
+
+@media (max-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .right {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .topRow h3 {
+    font-size: 22px;
+  }
+}
+
+/* ===========================
+        768px
+=========================== */
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 80px 25px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .smallHeading {
+    font-size: 13px;
+  }
+
+  .timeline {
+    padding-left: 35px;
+  }
+
+  .timeline::before {
+    left: 7px;
+  }
+
+  .dot {
+    left: -35px;
+    width: 16px;
+    height: 16px;
+  }
+
+  .content {
+    padding: 22px;
+  }
+
+  .topRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .topRow h3 {
+    font-size: 20px;
+  }
+
+  .content h4 {
+    font-size: 16px;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .card h3 {
+    font-size: 42px;
+  }
+
+  .card span {
+    font-size: 14px;
+  }
+}
+
+/* ===========================
+        500px
+=========================== */
+
+@media (max-width: 500px) {
+  .experience {
+    padding: 70px 20px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .line {
+    margin: 18px 0 35px;
+  }
+
+  .timeline {
+    padding-left: 28px;
+  }
+
+  .timeline::before {
+    left: 5px;
+  }
+
+  .dot {
+    left: -28px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .content {
+    padding: 18px;
+  }
+
+  .topRow h3 {
+    font-size: 18px;
+  }
+
+  .year {
+    font-size: 13px;
+  }
+
+  .content h4 {
+    font-size: 15px;
+  }
+
+  .content p {
+    font-size: 13px;
+  }
+
+  .right {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 130px;
+  }
+
+  .card h3 {
+    font-size: 36px;
+  }
+
+  .card span {
+    font-size: 13px;
+  }
+}

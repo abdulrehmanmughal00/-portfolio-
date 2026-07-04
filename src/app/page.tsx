@@ -1,10 +1,12 @@
 "use client";
 import About from "./components/About";
 import Account from "./components/Account";
+import Experience from "./components/Experience";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
 import Skills from "./components/Skills";
+import Contact from "./Contact";
 import Styles from "./page.module.css";
 //! animation background
 const particles = [
@@ -50,6 +52,8 @@ const page = () => {
         <About />
         <Skills />
         <Project />
+        <Experience />
+        <Contact />
       </section>
     </>
   );

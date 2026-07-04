@@ -12,7 +12,7 @@ const Home = () => {
         initial={{ opacity: 0, x: -70 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+        transition={{ duration: 0.2 }}
       >
         <div className={Styles.heroText}>
           <p className={Styles.smallText}>Hi, I&apos;m </p>

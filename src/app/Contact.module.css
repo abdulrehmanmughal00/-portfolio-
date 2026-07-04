@@ -1,0 +1,332 @@
+.contact {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  padding: 90px 7%;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* ==========================
+      Background Glow
+========================== */
+
+.blurOne,
+.blurTwo {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(130px);
+  z-index: 0;
+  animation: glow 6s ease-in-out infinite;
+}
+
+.blurOne {
+  width: 300px;
+  height: 300px;
+  background: rgba(124, 58, 237, 0.18);
+  top: -80px;
+  left: -90px;
+}
+
+.blurTwo {
+  width: 260px;
+  height: 260px;
+  background: rgba(59, 130, 246, 0.16);
+  right: -70px;
+  bottom: -70px;
+  animation-delay: 2s;
+}
+
+@keyframes glow {
+  0% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+}
+
+/* ==========================
+        Layout
+========================== */
+
+.container {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1450px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+
+.left {
+  flex: 1;
+}
+
+.form {
+  flex: 1.2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ==========================
+        Heading
+========================== */
+
+.smallHeading {
+  color: #8b5cf6;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.heading {
+  margin-top: 12px;
+
+  color: white;
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.heading span {
+  background: linear-gradient(90deg, #8b5cf6, #6366f1, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.desc {
+  margin-top: 24px;
+  color: #94a3b8;
+  line-height: 1.9;
+  max-width: 480px;
+  font-size: 16px;
+} /* ==========================
+      Contact Info
+========================== */
+
+.infoWrapper {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icon {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 16px;
+
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(124, 58, 237, 0.25);
+
+  color: #8b5cf6;
+  font-size: 20px;
+
+  transition: 0.3s;
+}
+
+.info:hover .icon {
+  transform: translateY(-4px);
+  border-color: #8b5cf6;
+
+  box-shadow: 0 0 22px rgba(124, 58, 237, 0.25);
+}
+
+.info h4 {
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.info p {
+  margin-top: 5px;
+
+  color: #94a3b8;
+  font-size: 15px;
+}
+
+/* ==========================
+          Form
+========================== */
+
+.row {
+  display: flex;
+  gap: 18px;
+}
+
+.row input {
+  flex: 1;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+
+  padding: 18px 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(18px);
+
+  color: white;
+  font-size: 15px;
+
+  outline: none;
+  transition: 0.3s;
+}
+
+.form textarea {
+  resize: none;
+  min-height: 220px;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: #94a3b8;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-color: #8b5cf6;
+
+  box-shadow: 0 0 18px rgba(124, 58, 237, 0.2);
+}
+/* ==========================
+        Button
+========================== */
+
+.form button {
+  width: 100%;
+
+  padding: 18px;
+
+  border: none;
+  border-radius: 14px;
+
+  cursor: pointer;
+
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+
+  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
+
+  transition: 0.35s;
+}
+
+.form button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 0 25px rgba(124, 58, 237, 0.35),
+    0 0 35px rgba(59, 130, 246, 0.18);
+}
+
+.form button:active {
+  transform: scale(0.97);
+}
+
+/* ==========================
+        Responsive
+========================== */
+
+@media (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left,
+  .form {
+    width: 100%;
+  }
+
+  .desc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 80px 25px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .form textarea {
+    min-height: 180px;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact {
+    padding: 70px 20px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .icon {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .info h4 {
+    font-size: 15px;
+  }
+
+  .info p {
+    font-size: 13px;
+  }
+
+  .form input,
+  .form textarea {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .form button {
+    padding: 16px;
+    font-size: 15px;
+  }
+}
