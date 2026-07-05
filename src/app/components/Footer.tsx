@@ -2,9 +2,7 @@
 
 import Styles from "./Footer.module.css";
 import {
-  FaYoutube,
   FaXTwitter,
-  FaLinkedinIn,
   FaInstagram,
   FaGithub,
 } from "react-icons/fa6";

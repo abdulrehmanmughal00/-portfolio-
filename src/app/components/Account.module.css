@@ -6,25 +6,21 @@
   display: flex;
   align-items: center;
 }
-
-.githubIcon {
-  margin-left: 21px;
-  height: 75%;
-  width: 36px;
-  border-radius: 50%;
-  color: black;
-  background: white;
-  cursor: pointer;
+.socials {
+  display: flex;
+  gap: 24px;
+  font-size: 2.5rem;
+  margin-bottom: 28px;
+  z-index: 2;
 }
 
-.gmailIcon {
-  margin-left: 21px;
-  height: 80%;
-  width: 40px;
-  border-radius: 50%;
+.socials a {
+  color: #d9d9d9;
+  transition: 0.3s;
+}
+.socials a:hover {
   color: white;
-  background: black;
-  cursor: pointer;
+  transform: translateY(-4px);
 }
 
 .scrollDiv {
@@ -43,7 +39,7 @@
   color: grey;
 }
 @media (max-width: 768px) {
-  .scrollDiv{
+  .scrollDiv {
     display: none;
   }
 }

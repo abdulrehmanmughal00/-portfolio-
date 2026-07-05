@@ -2,14 +2,6 @@
 
 import Styles from "./About.module.css";
 import { motion } from "framer-motion";
-import {
-  FaReact,
-  FaHtml5,
-  FaCss3Alt,
-  FaJsSquare,
-  FaGitAlt,
-} from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si";
 
 const About = () => {
   return (
@@ -52,16 +44,18 @@ const About = () => {
           <p className={Styles.desc}>
             This is Abdul Rehman, a Frontend Developer with two years of
             hands-on learning and project-building experience. I specialize in
-            React, Next.js, and TypeScript, creating responsive and modern web
-            applications.
+            <span className={Styles.span}> React</span>,
+            <span className={Styles.span}> Next.js</span> , and
+            <span className={Styles.span}> TypeScript</span> , creating
+            responsive and modern web applications.
           </p>
 
           <p className={Styles.desc}>
             Alongside my college education, I continuously improve my skills by
-            building projects, exploring new technologies, and following modern
-            frontend development practices.
+            building projects, exploring new
+            <span className={Styles.span}> technologies</span> , and following
+            modern frontend development practices.
           </p>
-
         </motion.div>
 
         {/* RIGHT */}
@@ -78,7 +72,7 @@ const About = () => {
           </motion.div>
 
           <motion.div whileHover={{ y: -8 }} className={Styles.card}>
-            <h3>10+</h3>
+            <h3>50+</h3>
             <p>Frontend Projects</p>
           </motion.div>
 

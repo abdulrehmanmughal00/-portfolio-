@@ -6,20 +6,21 @@ import { CiDesktopMouse1 } from "react-icons/ci";
 const Account = () => {
   return (
     <div className={Styles.account}>
-      
-      <a
-        href="https://github.com/abdulrehmanmughal00"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaGithub className={Styles.githubIcon} />
-      </a>
-      <a href="#contact">
-        <CgMail className={Styles.gmailIcon} />
-      </a>
+      <div className={Styles.socials}>
+        <a
+          href="https://github.com/abdulrehmanmughal00"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaGithub />
+        </a>
+        <a href="#contact">
+          <CgMail  />
+        </a>
+      </div>
       <div className={Styles.scrollDiv}>
         <CiDesktopMouse1 className={Styles.scrollIcon} />
-        <p style={{color:"grey", fontSize:"10px"}}>scroll down</p>
+        <p style={{ color: "grey", fontSize: "10px" }}>scroll down</p>
       </div>
     </div>
   );
