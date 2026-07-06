@@ -28,12 +28,14 @@ const Home = () => {
             technologies. Currently focused on
             <span className={Styles.span}> React</span> ,
             <span className={Styles.span}> Next.js</span> and
-            <span className={Styles.span}> TypeScript</span> building exceptional
-            user experiences.
+            <span className={Styles.span}> TypeScript</span> building
+            exceptional user experiences.
           </p>
 
           <div className={Styles.btnGroup}>
-            <button className={Styles.primaryBtn}>View Projects</button>
+            <a href="#projects">
+              <button className={Styles.primaryBtn}>View Projects</button>
+            </a>
           </div>
 
           <div className={Styles.socials}>
@@ -45,11 +47,12 @@ const Home = () => {
         </div>
       </motion.div>
 
-      <motion.div className={Styles.part2}
+      <motion.div
+        className={Styles.part2}
         initial={{ opacity: 0, x: 70 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
       >
         <div className={Styles.heroCircle}>
           {/* Outer Orbit */}
@@ -93,7 +96,7 @@ const Home = () => {
 
           <div className={Styles.profile}>
             <Image
-              src="/profile.jpeg"
+              src="/profile.png"
               alt="Logo"
               fill
               className={Styles.img}

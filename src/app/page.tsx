@@ -45,7 +45,7 @@ const page = () => {
         {/* add anything you want  */}
         <Navbar />
         {/* <Menu /> */}
-        <div className={Styles.space1}></div>
+        {/* <div className={Styles.space1}></div> */}
 
         <Home />
         {/* <Account /> */}
