@@ -10,15 +10,25 @@
 }
 
 .logo {
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
+  font-size: 34px;
+  font-weight: 800;
+  color: white;
+  line-height: 1.1;
 }
 
-.img {
-  width: clamp(110px, 11vw, 150px);
-  height: auto;
-  object-fit: contain;
+.span {
+  background: linear-gradient(
+    90deg,
+    #8b5cf6 0%,
+    #7c3aed 30%,
+    #6366f1 65%,
+    #3b82f6 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .home {
@@ -107,6 +117,13 @@
   .show1 {
     gap: 28px;
   }
+  .logo {
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+    line-height: 1.1;
+    background-color: blue;
+  }
 }
 
 /* ================= 992 ================= */
@@ -141,8 +158,8 @@
     padding: 0 16px;
   }
 
-  .img {
-    width: 110px;
+  .logo {
+    font-size: 24px;
   }
 
   .cvBtn {
@@ -152,5 +169,15 @@
 
   .icon {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px;
+  }
+  .cvBtn {
+    padding: 8px 10px;
+    font-size: 13px;
   }
 }

@@ -6,16 +6,9 @@ import { FiDownload } from "react-icons/fi";
 const Navbar = () => {
   return (
     <div className={Styles.navbar}>
-      <div className={Styles.logo}>
-        <Image
-          src="/logoo.png"
-          alt="Logo"
-          width={50}
-          height={50}
-          priority
-          className={Styles.img}
-        />
-      </div>
+      <h1 className={Styles.logo}>
+        Port<span className={Styles.span}>folio</span>
+      </h1>
       <div className={Styles.home}>
         <div className={Styles.show1}>
           <a href="#home">
