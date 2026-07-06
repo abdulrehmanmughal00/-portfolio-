@@ -15,7 +15,7 @@ const Home = () => {
         transition={{ duration: 0.2 }}
       >
         <div className={Styles.heroText}>
-          <p className={Styles.smallText}>Hi, I&apos;m </p>
+          <p className={Styles.smallText}>Hi , I &apos; m </p>
 
           <h1 className={Styles.name}>
             Abdul <span className={Styles.span}>Rehman</span>

@@ -42,14 +42,9 @@ const page = () => {
             />
           ))}
         </div>
-        {/* add anything you want  */}
         <Navbar />
-        {/* <Menu /> */}
-        {/* <div className={Styles.space1}></div> */}
 
         <Home />
-        {/* <Account /> */}
-        {/* <div className={Styles.space2}></div> */}
         <About />
         <Skills />
         <Project />
