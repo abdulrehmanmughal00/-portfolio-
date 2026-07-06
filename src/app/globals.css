@@ -9,7 +9,7 @@
 }
 
 body {
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 html,
@@ -22,4 +22,9 @@ body {
 ::selection {
   background: transparent;
   color: inherit;
+}
+:root {
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 20px;
 }

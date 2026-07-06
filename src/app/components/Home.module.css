@@ -12,7 +12,7 @@
   height: 100%;
   width: 50%;
   display: flex;
-  padding-left: 20px;
+  padding-left: 65px;
 }
 
 .heroText {
@@ -25,7 +25,7 @@
 /* small intro */
 .smallText {
   color: #cbd5e1;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* name */
@@ -220,7 +220,6 @@
   font-size: 18px;
   font-weight: 500;
 
-
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
 
@@ -276,6 +275,9 @@
   .part2 {
     padding-top: 35px;
   }
+  .part1 {
+    padding-left: 45px;
+  }
   .dotBig {
     width: 13px;
     height: 13px;
@@ -315,7 +317,9 @@
     width: 10px;
     height: 10px;
   }
-
+  .part1 {
+    padding-left: 35px;
+  }
   .dotSmall {
     width: 7px;
     height: 7px;
@@ -391,11 +395,13 @@
 }
 
 @media (max-width: 500px) {
-    .dotBig {
+  .dotBig {
     width: 7px;
     height: 7px;
   }
-
+  .part1 {
+    padding-left: 20px;
+  }
   .dotSmall {
     width: 5px;
     height: 5px;
@@ -414,7 +420,7 @@
     width: 125px;
     height: 125px;
   }
-   .workBtn {
+  .workBtn {
     padding: 9px 6px;
     font-size: 10px;
     font-weight: 300;

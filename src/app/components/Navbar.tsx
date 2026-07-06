@@ -1,6 +1,5 @@
 "use client";
 import Styles from "./Navbar.module.css";
-import Image from "next/image";
 import { FiDownload } from "react-icons/fi";
 
 const Navbar = () => {

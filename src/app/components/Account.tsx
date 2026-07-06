@@ -12,10 +12,10 @@ const Account = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub />
+          <FaGithub className={Styles.github} />
         </a>
         <a href="#contact">
-          <CgMail  />
+          <CgMail className={Styles.mail} />
         </a>
       </div>
       <div className={Styles.scrollDiv}>

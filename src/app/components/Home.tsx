@@ -26,9 +26,9 @@ const Home = () => {
           <p className={Styles.desc}>
             I build responsive and interactive web applications with modern
             technologies. Currently focused on
-            <span className={Styles.span}>React</span> ,
-            <span className={Styles.span}>Next.js</span> and
-            <span className={Styles.span}>TypeScript</span> building exceptional
+            <span className={Styles.span}> React</span> ,
+            <span className={Styles.span}> Next.js</span> and
+            <span className={Styles.span}> TypeScript</span> building exceptional
             user experiences.
           </p>
 
