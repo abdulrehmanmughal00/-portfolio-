@@ -1,38 +1,52 @@
 .home {
   position: relative;
-  height: auto;
+  min-height: 100vh;
   width: 100%;
+  overflow: hidden;
+
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+
+  padding: 100px 7%;
 }
 
-/* LEFT SIDE */
+/* ===========================
+        LEFT
+=========================== */
+
+.part1,
+.part2 {
+  flex: 1;
+}
 
 .part1 {
-  padding-top: 20px;
-  height: 100%;
-  width: 50%;
   display: flex;
-  padding-left: 65px;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .heroText {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   max-width: 600px;
 }
 
-/* small intro */
+/* Intro */
+
 .smallText {
   color: #cbd5e1;
   font-size: 16px;
 }
 
-/* name */
+/* Name */
+
 .name {
+  color: #fff;
   font-size: 64px;
   font-weight: 800;
-  color: white;
   line-height: 1.1;
 }
 
@@ -51,73 +65,79 @@
   color: transparent;
 }
 
-/* role */
+/* Role */
+
 .role {
-  font-size: 22px;
   color: #94a3b8;
+  font-size: 22px;
   font-weight: 500;
 }
 
-/* description */
+/* Description */
+
 .desc {
-  font-size: 16px;
+  max-width: 560px;
+
   color: #94a3b8;
-  line-height: 1.6;
-  max-width: 500px;
+
+  font-size: 17px;
+
+  line-height: 1.8;
 }
 
-/* buttons */
+/* ===========================
+        BUTTONS
+=========================== */
+
 .btnGroup {
   display: flex;
-  gap: 15px;
-  margin-top: 10px;
+  gap: 16px;
+
+  margin-top: 12px;
 }
 
 .primaryBtn {
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  background: linear-gradient(90deg, #7c3aed, #2563eb);
-  color: white;
-  cursor: pointer;
-  font-weight: 500;
-}
+  padding: 14px 28px;
 
-.cvBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 12px 22px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(124, 58, 237, 0.35);
-  border-radius: 10px;
-  color: #fff;
-  font-size: 14px;
-  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+
   cursor: pointer;
+
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  background: linear-gradient(90deg, #7c3aed, #2563eb);
+
   transition: 0.3s;
 }
 
-.cvBtn:hover {
-  background: rgba(124, 58, 237, 0.12);
-  border-color: #8b5cf6;
-  box-shadow: 0 0 18px rgba(124, 58, 237, 0.25);
-  transform: translateY(-2px);
+.primaryBtn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 0 22px rgba(124, 58, 237, 0.35);
 }
 
-.cvBtn:active,
 .primaryBtn:active {
   transform: scale(0.97);
 }
 
-/* socials */
+/* ===========================
+        SOCIALS
+=========================== */
+
 .socials {
   display: flex;
-  gap: 18px;
-  margin-top: 15px;
-  font-size: 20px;
+  align-items: center;
+  gap: 20px;
+
+  margin-top: 18px;
+
   color: #94a3b8;
+
+  font-size: 22px;
 }
 
 .socials i {
@@ -129,95 +149,141 @@
   color: #8b5cf6;
   transform: translateY(-3px);
 }
-/* xxxxxxxxxxxxxxxx/ */
-/* RIGHT SIDE */
+/* ===========================
+          RIGHT
+=========================== */
+
 .part2 {
-  height: 100%;
-  width: 50%;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  padding-top: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
-/* CENTER CIRCLE WRAPPER */
+/* ===========================
+        HERO CIRCLE
+=========================== */
+
 .heroCircle {
-  width: 300px;
-  height: 300px;
   position: relative;
+
+  width: 320px;
+  height: 320px;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* PROFILE */
+/* ===========================
+          PROFILE
+=========================== */
+
 .profile {
+  position: relative;
+
   width: 250px;
   height: 250px;
-  border-radius: 50%;
+
   overflow: hidden;
-  position: relative;
+  border-radius: 50%;
+
+  z-index: 2;
 }
 
 .img {
   object-fit: cover;
 }
 
-/* ORBITS */
+/* ===========================
+          ORBITS
+=========================== */
+
 .orbit1,
 .orbit2,
 .orbit3 {
   position: absolute;
-  width: 100%;
-  height: 100%;
+
+  inset: 0;
+
   border-radius: 50%;
 
-  /* border: 1px solid rgba(255, 255, 255, 0.15); */
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
-/* DOTS */
+.orbit2 {
+  transform: scale(0.82);
+}
+
+.orbit3 {
+  transform: scale(0.64);
+}
+
+/* ===========================
+            DOTS
+=========================== */
+
 .dotBig,
 .dotSmall,
 .dotTiny {
   position: absolute;
-  top: 0;
+
+  top: -7px;
   left: 50%;
+
   transform: translateX(-50%);
+
   border-radius: 50%;
 }
 
 .dotBig {
   width: 15px;
   height: 15px;
+
   background: #8b5cf6;
+
+  box-shadow: 0 0 18px #8b5cf6;
 }
 
 .dotSmall {
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
+
   background: #3b82f6;
+
+  box-shadow: 0 0 15px #3b82f6;
 }
 
 .dotTiny {
   width: 8px;
   height: 8px;
+
   background: #22c55e;
+
+  box-shadow: 0 0 12px #22c55e;
 }
+
+/* ===========================
+        AVAILABLE BUTTON
+=========================== */
+
 .workBtn {
-  margin-left: 400px;
+  margin-top: 40px;
+
   display: inline-flex;
   align-items: center;
   gap: 12px;
 
   padding: 14px 28px;
 
-  background: rgba(18, 18, 30, 0.9);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 999px;
 
-  color: #fff;
-  font-size: 18px;
+  background: rgba(18, 18, 30, 0.9);
+
+  color: white;
+
+  font-size: 16px;
   font-weight: 500;
 
   backdrop-filter: blur(18px);
@@ -227,21 +293,33 @@
     0 0 30px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
 
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .workBtn:hover {
   transform: translateY(-2px);
+
   border-color: rgba(59, 130, 246, 0.35);
+
   box-shadow:
     0 0 35px rgba(59, 130, 246, 0.18),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
+.workBtn:active {
+  transform: scale(0.97);
+}
+
+/* ===========================
+          STATUS
+=========================== */
+
 .status {
   width: 12px;
   height: 12px;
+
   border-radius: 50%;
+
   background: #22c55e;
 
   box-shadow:
@@ -250,6 +328,10 @@
 
   animation: pulse 1.8s infinite;
 }
+
+/* ===========================
+        ANIMATION
+=========================== */
 
 @keyframes pulse {
   0% {
@@ -267,17 +349,97 @@
     opacity: 1;
   }
 }
-/*! responsive */
-/* ================= 1250 ================= */
 
-@media (max-width: 1250px) {
-  .part1,
-  .part2 {
-    padding-top: 35px;
+/* ===========================
+        RESPONSIVE
+=========================== */
+
+/* ---------- 1100px ---------- */
+
+@media (max-width: 1100px) {
+  .home {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 70px;
   }
+
   .part1 {
-    padding-left: 45px;
+    justify-content: center;
   }
+
+  .part2 {
+    justify-content: center;
+  }
+
+  .heroText {
+    align-items: center;
+  }
+
+  .desc {
+    max-width: 650px;
+  }
+
+  .btnGroup,
+  .socials {
+    justify-content: center;
+  }
+
+  .heroCircle {
+    width: 300px;
+    height: 300px;
+  }
+
+  .profile {
+    width: 230px;
+    height: 230px;
+  }
+
+  .workBtn {
+    margin-top: 28px;
+  }
+}
+
+/* ---------- 768px ---------- */
+
+@media (max-width: 768px) {
+  .home {
+    padding: 90px 25px;
+    gap: 60px;
+  }
+
+  .smallText {
+    font-size: 15px;
+  }
+
+  .name {
+    font-size: 48px;
+  }
+
+  .role {
+    font-size: 20px;
+  }
+
+  .desc {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .heroCircle {
+    width: 240px;
+    height: 240px;
+  }
+
+  .profile {
+    width: 190px;
+    height: 190px;
+  }
+
+  .workBtn {
+    font-size: 15px;
+    padding: 13px 24px;
+  }
+
   .dotBig {
     width: 13px;
     height: 13px;
@@ -292,138 +454,75 @@
     width: 7px;
     height: 7px;
   }
-  .workBtn {
-    font-size: 12px;
-    font-weight: 500;
-    margin-top: 16px;
-    margin-left: 169px;
-    padding: 15px 15px;
-  }
-  .profile {
-    width: 200px;
-    height: 200px;
-  }
-  .heroCircle {
-    width: 250px;
-    height: 250px;
-  }
-  .name {
-    font-size: 40px;
-  }
 }
-/* 900 */
-@media (max-width: 900px) {
-  .dotBig {
-    width: 10px;
-    height: 10px;
-  }
-  .part1 {
-    padding-left: 35px;
-  }
-  .dotSmall {
-    width: 7px;
-    height: 7px;
+
+/* ---------- 480px ---------- */
+
+@media (max-width: 480px) {
+  .home {
+    padding: 80px 20px;
+    gap: 50px;
   }
 
-  .dotTiny {
-    width: 4px;
-    height: 4px;
+  .smallText {
+    font-size: 14px;
   }
-  .workBtn {
-    font-size: 10px;
-    font-weight: 500;
-    margin-top: 16px;
-    margin-left: 169px;
-    padding: 13px 15px;
+
+  .name {
+    font-size: 34px;
+  }
+
+  .role {
+    font-size: 17px;
+  }
+
+  .desc {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .btnGroup {
+    width: 100%;
+  }
+
+  .primaryBtn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .socials {
+    font-size: 20px;
+    gap: 18px;
+  }
+
+  .heroCircle {
+    width: 180px;
+    height: 180px;
   }
 
   .profile {
     width: 145px;
     height: 145px;
   }
-  .heroCircle {
-    width: 190px;
-    height: 190px;
-  }
-  .part1 {
-    padding-top: 30px;
-    flex-wrap: wrap;
-  }
-  .name {
-    font-size: 30px;
-  }
-}
-
-/* 7000 */
-@media (max-width: 700px) {
-  .part1 {
-    padding-top: 20px;
-  }
-  .part2 {
-    padding-top: 26px;
-  }
 
   .workBtn {
-    margin-left: 45px;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 14px;
   }
-  .profile {
-    width: 120px;
-    height: 120px;
-  }
-  .heroCircle {
-    width: 150px;
-    height: 150px;
-  }
-  .workBtn {
-    padding: 14px 10px;
-    font-size: 10px;
-    font-weight: 300;
-  }
-  .name {
-    font-size: 20px;
-  }
-  .role {
-    font-size: 12px;
-    font-weight: 500;
-  }
-  .desc {
-    font-size: 10px;
-    line-height: normal;
-    max-width: 300px;
-  }
-}
 
-@media (max-width: 500px) {
   .dotBig {
+    width: 10px;
+    height: 10px;
+  }
+
+  .dotSmall {
     width: 7px;
     height: 7px;
   }
-  .part1 {
-    padding-left: 20px;
-  }
-  .dotSmall {
-    width: 5px;
-    height: 5px;
-  }
 
   .dotTiny {
-    width: 2.5px;
-    height: 2.5px;
-  }
-
-  .profile {
-    width: 95px;
-    height: 95px;
-  }
-  .heroCircle {
-    width: 125px;
-    height: 125px;
-  }
-  .workBtn {
-    padding: 9px 6px;
-    font-size: 10px;
-    font-weight: 300;
-    gap: 5px;
+    width: 5px;
+    height: 5px;
   }
 }

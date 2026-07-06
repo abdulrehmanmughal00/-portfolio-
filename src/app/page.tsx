@@ -48,7 +48,7 @@ const page = () => {
         <div className={Styles.space1}></div>
 
         <Home />
-        <Account />
+        {/* <Account /> */}
         <div className={Styles.space2}></div>
         <About />
         <Skills />
