@@ -49,7 +49,7 @@ const page = () => {
 
         <Home />
         {/* <Account /> */}
-        <div className={Styles.space2}></div>
+        {/* <div className={Styles.space2}></div> */}
         <About />
         <Skills />
         <Project />
