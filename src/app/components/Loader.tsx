@@ -17,7 +17,7 @@ export default function Loader() {
   return (
     <div className={`${Styles.loader} ${hide ? Styles.hide : ""}`}>
       <div className={Styles.logo}>
-        Wel<span className={Styles.span}>come</span>
+        Port<span className={Styles.span}>folio</span>
       </div>
     </div>
   );
