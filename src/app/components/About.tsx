@@ -44,7 +44,7 @@ const About = () => {
           <p className={Styles.desc}>
             This is Abdul Rehman, a Frontend Developer with two years of
             hands-on learning and project-building experience. I specialize in
-            <span className={Styles.span}> React</span>,
+            <span className={Styles.span}> React </span> ,
             <span className={Styles.span}> Next.js</span> , and
             <span className={Styles.span}> TypeScript</span> , creating
             responsive and modern web applications.

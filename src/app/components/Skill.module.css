@@ -53,10 +53,9 @@
 
 .techWrapper {
   display: grid;
-
+padding-top: 15px;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-
-  gap: 20px;
+  gap: 30px;
 
   width: 100%;
 }
@@ -64,7 +63,6 @@
 .tech {
   min-width: 170px;
   justify-content: center;
-
   display: flex;
   align-items: center;
   gap: 12px;
@@ -153,7 +151,7 @@
 }
 
 @media (max-width: 480px) {
-  .name{
+  .name {
     font-size: 34px;
   }
 }

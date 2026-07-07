@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const experience = [
   {
-    title: "Frontend Developer (Learning)",
+    title: "Frontend Developer ",
     company: "Self Learning",
     year: "2024 - Present",
     desc: "Building modern frontend applications using React, Next.js and TypeScript while continuously improving problem solving skills.",
