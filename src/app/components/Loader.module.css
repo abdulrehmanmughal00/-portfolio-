@@ -1,0 +1,57 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  background: #050505;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: translateY(0);
+  transition: transform 1s cubic-bezier(0.77, 0, 0.18, 1);
+}
+
+.logo {
+  color: white;
+  font-size: clamp(2rem, 5vw, 5rem);
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  animation: pulse 1.2s infinite;
+}
+.span {
+  background: linear-gradient(
+    90deg,
+    #8b5cf6 0%,
+    #7c3aed 30%,
+    #6366f1 65%,
+    #3b82f6 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0.3;
+    transform: scale(0.95);
+  }
+}
+
+.hide {
+  transform: translateY(-100%);
+}
