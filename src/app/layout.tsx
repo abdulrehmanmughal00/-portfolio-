@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "Abdul Rehman",
   description:
     "I'm Abdul Rehman Mughal, a Frontend Developer who loves creating fast, scalable, and visually appealing web applications. My focus is on writing clean code and delivering intuitive user experiences.",
+  verification: {
+    google: "PEczm1L0N6wB84I2zYd_-vR7Wpxd-ObZcE4yVfbdgMc",
+  },
 };
 
 export default function RootLayout({
