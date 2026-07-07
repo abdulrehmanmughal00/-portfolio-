@@ -1,6 +1,6 @@
 .home {
   position: relative;
-  height: 74vh;
+  min-height: 86vh;
   width: 100%;
   overflow: hidden;
   display: flex;
