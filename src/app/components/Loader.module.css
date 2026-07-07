@@ -1,7 +1,7 @@
 .loader {
   position: fixed;
   inset: 0;
-  background: #050505;
+  background-color: #050510;
   z-index: 9999;
 
   display: flex;
