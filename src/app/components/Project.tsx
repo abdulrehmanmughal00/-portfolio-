@@ -8,11 +8,11 @@ import { FiExternalLink } from "react-icons/fi";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Store",
-    image: "/projects/project1.jpg",
-    desc: "A modern e-commerce application built with Next.js, TypeScript and Stripe integration.",
-    tech: ["Next.js", "TypeScript", "Stripe"],
-    link: "#",
+    title: "M-Apparel Store",
+    image: "/e-com-web.png",
+    desc: "A modern e-commerce application built with Next.js, TypeScript and CSS.",
+    tech: ["Next.js", "TypeScript", "CSS"],
+    link: "https://m-apparel-eight.vercel.app/",
   },
   {
     id: 2,
