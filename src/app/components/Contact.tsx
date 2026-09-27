@@ -17,7 +17,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const contactInfo: ContactInfo = {
     email: "abdulrehmanmuglll00@gmail.com",
-    phone: " 03453951316",
+    phone: " 03131129224",
     location: "Pakistan , Karachi",
   };
 
